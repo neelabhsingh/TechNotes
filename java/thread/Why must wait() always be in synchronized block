@@ -1,0 +1,25 @@
+Why must wait() always be in synchronized block
+
+A wait() only makes sense when there is also a notify(), so it's always about communication between threads, and that needs synchronization to work correctly. One could argue that this should be implicit, but that would not really help, for the following reason:
+
+Semantically, you never just wait(). You need some condition to be satsified, and if it is not, you wait until it is. So what you really do is
+
+if(!condition){
+    wait();
+}
+But the condition is being set by a separate thread, so in order to have this work correctly you need synchronization.
+
+A couple more things wrong with it, where just because your thread quit waiting doesn't mean the condition you are looking for is true:
+
+You can get spurious wakeups (meaning that a thread can wake up from waiting without ever having received a notification), or
+
+The condition can get set, but a third thread makes the condition false again by the time the waiting thread wakes up (and reacquires the monitor).
+
+To deal with these cases what you really need is always some variation of this:
+
+synchronized(lock){
+    while(!condition){
+        lock.wait();
+    }
+}
+Better yet, don't mess with the synchronization primitives at all and work with the abstractions offered in the java.util.concurrent packages.
