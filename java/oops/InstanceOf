@@ -1,0 +1,11 @@
+ClassCastException: You can only cast an object to its actual class or one of its supertypes. If you are wrong, a compile-time error or class cast exception will occur:
+To avoid the exception, you can first test whether the object is of the desired type, using the instanceof operator. The expression
+
+object instanceof Type
+
+returns true if object is an instance of a class that has Type as a supertype. It is a good idea to make this check before using a cast.
+
+
+
+
+The instanceof operator is null-safe: The expression obj instanceof Type is false if obj is null. After all, null cannot possibly be a reference to an object of any given type.

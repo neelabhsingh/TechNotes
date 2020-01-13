@@ -1,0 +1,10 @@
+Lambda expressions: Lambda expression (or function) is just an anonymous function, ie. a function with no name and without being bounded to an identifier. They are written exactly in the place where it's needed, typically as parameter to some other function.
+
+either
+(parameters) -> expression
+(paramters) -> {statements;}
+() -> expression
+
+A typical lambda expression example will be like this:
+
+(x, y) -> x + y  //This function takes two parameters and return their sum.

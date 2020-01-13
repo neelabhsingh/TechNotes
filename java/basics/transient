@@ -1,0 +1,21 @@
+The Java transient keyword is used on class attributes/variables to indicate that serialization process of such class should ignore such variables while creating a persistent byte stream for any instance of that class.
+
+Every field marked as transient will not be serialized. You use the transient keyword to indicate to the java virtual machine that the transient variable is not part of the persistent state of an object.
+
+2. When should we use transient keyword in java?	
+
+5. Summary Notes
+The modifier transient can be applied to field members of a class to turn off serialization on these field members.
+You can use transient keyword in classes with fields which needs to be secured or calculated on existing state fields. And use it when it simply doesn’t make sense to serialize those fields such as loggers and threads.
+Serialization does not care about access modifiers such as private; all non-transient fields are considered part of an object’s persistent state and are eligible for persistence.
+Whenever any final field/reference is evaluated as “constant expression”, it is serialized by JVM ignoring the presence of transient keyword.
+A good usecase of transient keyword in java is HashMap class.
+That’s all from my side for “transient” keyword. If you want to add something in this post, please do let me know via comments. I will be happy to expand this post.
+
+If you want to learn more concepts like this in future, I will suggest you to join my mailing list/ OR follow me on Google Plus/Facebook or Twitter. I do post interesting links other than howtodoinjava.com in my social profiles.
+
+Happy Learning !!
+
+References:
+
+Ref: https://howtodoinjava.com/java/basics/transient-keyword-in-java-with-real-time-example/

@@ -1,0 +1,12 @@
+Difference between Comparable and Comparator Interface.
+
+1. Always remember that java.lang.Comparable is used to define natural ordering of an object, while java.util.Comparator can be used to define any ordering based upon your requirements. 
+
+2. You can define only one ordering with Comparable but can have multiple Comparators.
+
+3. One difference between Comparable and Comparator in Java is that former gives us compareTo(Object toCompare), which accepts an object, which now uses Generics from Java 1.5 onwards, while Comparator defines compare(Object obj1, Object obj2) method for comparing two object. Continuing from the previous difference between Comparator vs Comparable later is used to compare current object, represented by this keyword, with another object, while Comparator compares two arbitrary objects passed to compare() method in Java.
+
+4.  One more key thing, which is not a difference but worth remembering is that both compareTo() and compare() method in Java must be consistent with equals() implementation i.e. if two methods are equal by equals() method than compareTo() and compare() must return zero. Failing to adhere this guideline, your object may break invariants of Java collection classes which rely on compare() or compareTo() e.g. TreeSet and TreeMap.
+
+
+Ref: https://www.java67.com/2013/08/difference-between-comparator-and-comparable-in-java-interface-sorting.html

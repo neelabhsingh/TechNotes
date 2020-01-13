@@ -1,0 +1,6 @@
+ Functional Interface
+
+ 2. Java 8 functional interface
+Single Abstract Method interfaces (SAM Interfaces) is not a new concept. It means interfaces with only one single method. In java, we already have many examples of such SAM interfaces. From java 8, they will also be referred as functional interfaces as well. Java 8, enforces the rule of single responsibility by marking these interfaces with a new annotation i.e. @FunctionalInterface.
+
+Single Abstract Method interfaces (SAM Interfaces).With Java 8 the same concept of SAM interfaces is recreated and are called Functional interface

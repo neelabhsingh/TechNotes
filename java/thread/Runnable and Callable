@@ -1,0 +1,3 @@
+Runnable and Callable
+
+Both interfaces are designed to represent a task that can be executed by multiple threads. Runnable tasks can be run using the Thread class or ExecutorService whereas Callables can be run only using the latter.
