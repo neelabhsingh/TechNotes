@@ -1,0 +1,7 @@
+MavenCmd
+
+If you use Maven, you can run the application by using 
+1. ./mvnw spring-boot:run. Alternatively, you can build the JAR file with ./mvnw clean package and then run the JAR file, as follows:
+
+2. java -jar target/<Name of your Jar file which can be found in target directory>.jar 
+When you run above cmd it will run the server.

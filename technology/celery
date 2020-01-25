@@ -1,0 +1,2 @@
+Distributed Task Queue
+Celery is an open source asynchronous task queue or job queue which is based on distributed message passing. While it supports scheduling, its focus is on operations in real time.

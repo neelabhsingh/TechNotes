@@ -1,0 +1,9 @@
+Spring Container
+Primary functions
+1. Create and manage objects (Inversion of Control)
+2. Inject object's dependencies (Dependency Injection)
+
+There are many types of injection with Spring
+We will cover the two most common
+1. Constructor Injection
+2. Setter Injection

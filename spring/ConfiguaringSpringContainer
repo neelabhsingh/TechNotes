@@ -1,0 +1,3 @@
+1. XML configuration file (legacy, but most legacy apps still use this)
+2. Java Annotations (modern)
+3. Java Source Code (modern)

@@ -1,0 +1,6 @@
+Creating multiple objects by one type only (A good practice)
+
+In real-time, we need different objects of a class in different methods. Creating a number of references for storing them is not a good practice and therefore we declare a static reference variable and use it whenever required. In this case,wastage of memory is less. The objects that are not referenced anymore will be destroyed by Garbage Collector of java. Example:
+          
+Test test = new Test();
+test = new Test();

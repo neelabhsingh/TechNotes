@@ -1,0 +1,1 @@
+Lots of IO Netfork IO call,  IO blocking calls, then it is advised to use async in python or go coroutines in go or Erlangs lightweight threads to get better performance.

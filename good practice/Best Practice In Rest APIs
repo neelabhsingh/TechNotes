@@ -1,0 +1,30 @@
+Best Practice In Rest APIs
+
+1. Use plural nouns and not verbs
+Resource	   GET read	                     POST create	              PUT update	              DELETE
+/fruits	       Returns a list of fruits      you have Create a new fruit  Bulk update of fruits       possibly all the 
+                                                                          (you may never have to)                            
+                                                                                                  
+                                                                          
+               
+/fruits/1004
+Returns a specific fruit	Method not allowed (405)	Updates a specific fruit	Deletes a specific fruit
+It’s not good practice to have API endpoints like /getFruits or /delete-fruits or /createfruits. Instead, take advantage of HTTP verbs for the definitions. This means I can easily build upon your APIs and have fewer resources to manage. This approach is less ambiguous and cleaner.
+
+GET method and its query parameters should not alter the state
+Avoid designing endpoints like this
+
+    GET /fruits/1004?avaliable=false
+    GET /fruits/1004/has-finished 
+
+
+    Use sub-resources for relations
+Say you are designing a social network where users have blogs, you should establish relationships like this:
+
+    GET /users/1004/blogs
+This should fetch all the user’s blogs. If you want to fetch a specific blog, you can do the following:
+
+    GET /users/1004/blogs/1010
+
+
+    Ref: https://pusher.com/tutorials/understanding-rest-api#when-to-use-a-service-like-pusher-instead

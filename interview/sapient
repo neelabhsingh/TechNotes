@@ -1,0 +1,7 @@
+Round 1: Online coding
+1. Arrange sort the array of string in lexogrophic. using comparator to sort
+2. kadane algorithm Largest Sum Contiguous Subarray\
+3. Smallest window that contains all characters of string itself: 
+   https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
+4. Arrange Rotated sorted array such that all even number combes before odd.
+3 4 1 2 => 3 1 4 2
