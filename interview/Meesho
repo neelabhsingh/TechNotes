@@ -1,0 +1,5 @@
+1. Implement next and hasNext for Binary Search Tree
+2. Given string remove dublicate characrer and return laxicographic word
+ex cabc  => cab and abc, output will be abc
+https://leetcode.com/articles/remove-duplicate-letters/ 
+3. Singleton Class

@@ -1,0 +1,39 @@
+<div id="brinza-task-description">
+<p>Write a function <tt style="white-space:pre-wrap">solution</tt> that, given an array A consisting of N integers, returns the number of fragments of A whose sum equals 0 (that is, pairs (P,&nbsp;Q) such that P ≤ Q and the sum A[P] + A[P+1] + ... + A[Q] is 0). The function should return −1 if this number exceeds 1,000,000,000.</p>
+<p><b><b>Examples</b></b>:</p>
+<p>1. Given A = [2, −2, 3, 0, 4, −7], the function should return 4, as explained on this picture:</p>
+<p><img class="inline-description-image" src="https://codility-frontend-prod.s3.amazonaws.com/media/task_static/count_zero_sum_slices/static/images/auto/1097f6ed550c163b1caf9a987b99a355.png" alt="Intervals with sum 0: [2, -2], [3, 0, 4, -7], [0], [2, -2, 3, 0, 4, -7]"></p>
+<p>2. Given A = [0, 0, ..., 0] of length 100,000, the function should return −1.</p>
+<p>Write an <b><b>efficient</b></b> algorithm for the following assumptions:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];</li>
+<li>each element of array A is an integer within the range [<span class="number">−10,000</span>..<span class="number">10,000</span>].</li>
+</ul>
+</blockquote></div>
+
+
+
+
+q2
+
+<div id="brinza-task-description">
+<p>Write a function <tt style="white-space:pre-wrap">solution</tt> that, given an array A consisting of N integers, returns the number of fragments of A whose sum equals 0 (that is, pairs (P,&nbsp;Q) such that P ≤ Q and the sum A[P] + A[P+1] + ... + A[Q] is 0). The function should return −1 if this number exceeds 1,000,000,000.</p>
+<p><b><b>Examples</b></b>:</p>
+<p>1. Given A = [2, −2, 3, 0, 4, −7], the function should return 4, as explained on this picture:</p>
+<p><img class="inline-description-image" src="https://codility-frontend-prod.s3.amazonaws.com/media/task_static/count_zero_sum_slices/static/images/auto/1097f6ed550c163b1caf9a987b99a355.png" alt="Intervals with sum 0: [2, -2], [3, 0, 4, -7], [0], [2, -2, 3, 0, 4, -7]"></p>
+<p>2. Given A = [0, 0, ..., 0] of length 100,000, the function should return −1.</p>
+<p>Write an <b><b>efficient</b></b> algorithm for the following assumptions:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];</li>
+<li>each element of array A is an integer within the range [<span class="number">−10,000</span>..<span class="number">10,000</span>].</li>
+</ul>
+</blockquote></div>
+
+<div id="brinza-task-description">
+<p>Write a function <tt style="white-space:pre-wrap">solution</tt> that, given two integers A and B, returns the number of integers from the range [A..B] (ends are included) which can be expressed as the product of two consecutive integers, that is X * (X + 1), for some integer X.</p>
+<p><b>Examples:</b></p>
+<p>1. Given A = 6 and B = 20, the function should return 3. These integers are: 6 = 2 * 3, 12 = 3 * 4 and 20 = 4 * 5.</p>
+<p>2. Given A = 21 and B = 29, the function should return 0. There are no integers of the form X * (X + 1) in this interval.</p>
+<p>Write an <b><b>efficient</b></b> algorithm for the following assumptions:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>A and B are integers within the range [<span class="number">1</span>..<span class="number">1,000,000,000</span>];</li>
+<li>A ≤ B.</li>
+</ul>
+</blockquote></div>

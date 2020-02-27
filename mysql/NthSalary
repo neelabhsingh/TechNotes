@@ -1,0 +1,9 @@
+
+SQL query to find Nth highest salary from a salary table
+
+Approach 1: SELECT * FROM Employee Emp1 
+WHERE (N-1) = ( 
+    SELECT COUNT(DISTINCT(Emp2.Salary)) 
+    FROM  Employee Emp2 
+    WHERE Emp2.Salary > Emp1.Salary)
+For each record processed by outer query, inner query will be executed and will return how many records has records has salary less than the current salary. If you are looking for second highest salary then your query will stop as soon as inner query will return N-1.

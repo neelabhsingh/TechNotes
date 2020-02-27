@@ -5,3 +5,19 @@ Round 1: Online coding
    https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
 4. Arrange Rotated sorted array such that all even number combes before odd.
 3 4 1 2 => 3 1 4 2
+4. Marshalling in java
+Round :MicroSevices
+How microservice communicates
+What are limitaion of microservice
+Interprocess communication
+Why Microservices are stateless
+How Spring auto configure
+Some question related to Serialization over wire and microservice
+What is Saga
+Service Discovery, why need service discovery
+Circuit pattern and states,
+How to write test ful service in spring,
+What type of log system have you used.
+How to acheive consisteny between two microservices,
+What cloud plateform you worked, 
+If micro-service has more than one instance, how micro-service decides on which instance request will go.

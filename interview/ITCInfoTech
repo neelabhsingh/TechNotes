@@ -1,0 +1,4 @@
+Q1. is it required to override @equal and hashcode in TreeMap.
+Ans: a TreeSet instance performs all element comparisons using its compareTo (or compare) method
+
+equals() and hashCode do not come into the picture when dealing when TreeSet and TreeMap. However, it is a good practice to override them properly, should you use this object as a key for HashMap (for example) in the future.

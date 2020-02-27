@@ -1,3 +1,29 @@
 PayU
 1. What is Index
 2. Dynamic Problems Approach
+
+Second Round
+Difference between memchache and radis, When you use radis.
+How indexing is done, how to optimize the query which is searching Mobile number?
+
+Projects: 
+What kinds of services you have written? What kind of architecture you have written in Your last companies Healofy, Amazon.
+Which cache you use, why memcache? Why memcache why not redis? Have you ever work in Redis? Difference bewteen Memcache and radis. What kind of mechanisum you store in cache?
+How do you understand Dependency Injection? How Spring containter is responsible for Injection of the dependency? 
+
+It would have 3 layer architecture, Controller Layer, Service Layer, DOA Layer, What are different annotatioon considered? 
+What is differnce between componet and service? Service directaly connecting to database or it calling any repository layer?
+
+What are annotation you put in repository classes? The class which is connecting to database. what all thing should be their in that particular class?
+
+Let suppose, In service class you want repository object, how you do that:@repository.
+How to you are the annotation put in your repository class.
+
+Have you done indexing in the databases? Let you have user table and that user table has 20 million of records, now you have to search with the phone number, it is primary key, search user with phone , how you make fast query fast? Can you optimise queury at code level,Have to ever use index, how to use indexing.
+
+
+Let differece secvicce to call , there is one service A, it calling B (20 secs), C(25 sec ) , D (20 Sec). When get resonse B,C,D it has to return to resoinse to front end. 
+
+If B is 20, C 25, D 20, how fast you get resonse in APPlicatio in A
+
+I have service, lot of request is comming, ex, share marking application, lot of trading, how you will name multiple request milloin of request is handling my one appliaction? 

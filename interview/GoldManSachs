@@ -1,0 +1,3 @@
+https://leetcode.com/problems/decode-ways/
+1. How Feeds are stored, it is dynamic or same feed for every user, from 1st day of registration.
+2. What you are storing memecache 
